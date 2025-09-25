@@ -2,11 +2,11 @@
 
 # EXP 5: COMPARATIVE ANALYSIS OF DIFFERENT TYPES OF PROMPTING PATTERNS AND EXPLAIN WITH VARIOUS TEST SCENARIOS
 
-# Aim: To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
+## Aim: 
+To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
 
-### AI Tools Required: 
 
-# Explanation: 
+## Explanation: 
 Define the Two Prompt Types:
 
 Write a basic Prompt: Clear, detailed, and structured prompts that give specific instructions or context to guide the model.
@@ -83,7 +83,7 @@ Summary of findings with insights on how to structure prompts for optimal result
 
 ---
 
-# OUTPUT
+## OUTPUT
 | **Pattern**                       | **Definition**                                                                  | **Example Prompt**                                                                           | **Strengths**                                                                       | **Weaknesses**                                                                             | **Best Use Case**                                         |
 | --------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
 | **1. Instructional Pattern**      | Provides clear step-by-step directions to perform a task.                       | *“Explain step by step how to implement binary search in Java.”*                             | - Produces structured, detailed answers. <br> - Good for learning processes.        | - May become too lengthy. <br> - Overly dependent on clarity of instruction.               | Tutorials, algorithms, coding help, “how-to” guides.      |
@@ -93,4 +93,5 @@ Summary of findings with insights on how to structure prompts for optimal result
 | **5. Opinion / Argument Pattern** | Seeks views, reasoning, or argumentative discussion.                            | *“Do you think AI will replace human jobs? Give reasons.”*                                   | - Encourages critical thinking. <br> - Produces balanced reasoning.                 | - Can be subjective. <br> - May lack strong evidence unless specified.                     | Debates, essays, personal reflections.                    |
 | **6. Scenario Pattern**           | Poses a hypothetical or real-world situation and asks AI to respond in context. | *“Imagine you are a doctor. How would you use AI to improve patient diagnosis?”*             | - Produces creative, applied responses. <br> - Makes answers context-specific.      | - Sometimes too imaginative. <br> - May ignore technical accuracy if not guided.           | Case studies, role-play, applied learning, brainstorming. |
 
-# RESULT: The prompt for the above said problem executed successfully
+## RESULT: 
+The prompt for the above said problem executed successfully
