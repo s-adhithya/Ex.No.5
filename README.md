@@ -1,82 +1,96 @@
-# EX-5 Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
-
-# Experiment:
-Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. 
-     Analyze the quality, accuracy, and depth of the generated responses.
-
-# Objective
-To compare how different prompting patterns affect the performance of AI models in terms of quality, accuracy, and depth of responses.
-
-## Scenario: "I am struggling with managing my time effectively. Can you help me improve my time management skills?"
-### 1. The Persona Pattern
-Prompt: "Imagine you are a productivity coach, how would you help someone improve their time management skills?"
-
-Output: "As a productivity coach, I would first start by understanding your goals and challenges. We would then identify time-wasting activities, prioritize your tasks, and create a schedule that balances productivity with rest. Using tools like the Pomodoro technique and setting specific, achievable goals for each day would help keep you on track."
-
-### 2. Zero-shot Prompting
-Prompt: "Help me improve my time management skills."
-
-Output: "To improve time management, you should start by organizing your day into blocks of focused work and scheduled breaks. Prioritize tasks based on importance and deadlines. Additionally, setting goals each day and evaluating your progress at the end of the day can help maintain productivity."
-
-### 3. Few-shot Prompting
-Prompt: "Here are some time management strategies:
-
-Prioritize your tasks
-
-Break large tasks into smaller chunks
-
-Set specific deadlines Can you suggest more strategies?"
-
-Output: "Certainly! You could also try using the 'Two-Minute Rule'—if a task takes less than two minutes, do it immediately. Another strategy is 'time blocking,' where you assign specific time slots to certain tasks to prevent multitasking. Lastly, reflect on your work weekly to assess and adjust your strategies."
-
-### 4. Chain-of-Thought Prompting
-Prompt: "What steps should I take to improve time management?"
-
-Output: "First, assess how you spend your time daily. Next, identify which activities are unproductive or time-consuming. Once you know what to avoid, prioritize your tasks by importance. Afterward, set realistic goals, and schedule time for each task. Lastly, regularly check in with your progress to adjust as needed."
-
-### 5. Active-prompt
-Prompt: "Give me a list of specific actions to improve my time management skills."
-
-Output: "1. List all your tasks and categorize them into urgent and non-urgent. 2. Set daily, weekly, and monthly goals. 3. Block out time for focused work and relaxation. 4. Track your time using an app or calendar. 5. Reflect at the end of each day and week to assess progress and adjust accordingly."
-
-### 6. Directional Stimulus Prompting
-Prompt: "You're about to start a busy day. What should you do first to manage your time effectively?"
-
-Output: "Begin by making a list of all your tasks for the day. Then, prioritize them based on deadlines and importance. Allocate time slots for each task and avoid multitasking. Start with the most important task, and break it into smaller tasks to avoid feeling overwhelmed."
-
-### 7. Graph Prompting
-Prompt: "Create a visual graph that helps me manage my time better."
-
-Output: "The graph could look like this: a bar chart with 'Time Spent' on the y-axis and 'Task Categories' on the x-axis. The categories could include 'Work,' 'Rest,' 'Personal Tasks,' etc. You would plot time spent in each category to visually identify time allocation and adjust accordingly."
-
-### 8. Reverse-Engineered Prompt Generation
-Prompt: "Tell me the steps to improve time management, starting from the outcome of having a balanced, productive day."
-
-Output: "To achieve a balanced and productive day, you must first plan your day ahead of time. Identify your goals, schedule focused work sessions, and ensure you leave time for breaks. You need to reflect on your progress each day, and at the end of the week, review your accomplishments and adjust your strategy accordingly."
-
-### 9. Multilingual and Multimodal Prompt Engineering
-Prompt: "Can you explain time management strategies in both English and Spanish?"
-
-Output:
-
-English: "Effective time management includes setting clear goals, prioritizing tasks, and scheduling regular breaks. The Pomodoro technique and time blocking are great methods to stay focused."
-
-Spanish: "La gestión efectiva del tiempo incluye establecer metas claras, priorizar tareas y programar descansos regulares. La técnica Pomodoro y el bloque de tiempo son excelentes métodos para mantenerse enfocado."
 
 
-# Summary:
-| **Prompt Pattern**                      | **Quality of Response**                   | **Accuracy of Response**             | **Depth of Response**            |
-|-----------------------------------------|-------------------------------------------|--------------------------------------|----------------------------------|
-| **The Persona Pattern**                 | High, tailored and empathetic             | High, context-specific               | Moderate, may feel constrained to the persona |
-| **Zero-shot Prompting**                 | Moderate, fast and clear                  | Moderate, general responses         | Low, lacks depth and creativity  |
-| **Few-shot Prompting**                  | High, structured with prior examples      | High, contextually rich              | High, provides refined details   |
-| **Chain-of-Thought Prompting**          | Very High, detailed, reasoned responses   | High, logical steps improve accuracy | Very High, step-by-step analysis |
-| **Active-prompt**                        | Moderate, direct actionable advice        | Moderate, clear but limited         | Low, very specific and rigid    |
-| **Directional Stimulus Prompting**      | Moderate, guides thought process          | Moderate, context-aware but narrow  | Moderate, nudges toward specific thought |
-| **Graph Prompting**                     | Moderate, visual data representation     | High for visual tasks               | Moderate, useful for explaining concepts visually |
-| **Reverse-Engineered Prompt Generation**| High, goal-oriented, actionable steps     | High, focuses on end goals          | High, focuses on end-to-end planning |
-| **Multilingual and Multimodal Prompt Engineering** | High, versatile across languages and formats | Moderate, depends on context and language | High, supports varied inputs but can be complex |
+# EXP 5: COMPARATIVE ANALYSIS OF DIFFERENT TYPES OF PROMPTING PATTERNS AND EXPLAIN WITH VARIOUS TEST SCENARIOS
+
+# Aim: To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
+
+### AI Tools Required: 
+
+# Explanation: 
+Define the Two Prompt Types:
+
+Write a basic Prompt: Clear, detailed, and structured prompts that give specific instructions or context to guide the model.
+Based on that pattern type refined the prompt and submit that with AI tool.
+Get the ouput and write the report.
+
+Prepare Multiple Test Scenarios:
+Select various scenarios such as:
+Generating a creative story.
+Answering a factual question.
+Summarizing an article or concept.
+Providing advice or recommendations.
+Or Any other test scenario
+For each scenario, create both a naïve and a basic prompt. Ensure each pair of prompts targets the same task but with different levels of structure.
+Run Experiments with ChatGPT:
+Input the naïve prompt for each scenario and record the generated response.
+Then input the corresponding basic prompt and capture that response.
+Repeat this process for all selected scenarios to gather a full set of results.
+Evaluate Responses : 
+	Compare how ChatGPT performs when given naïve versus basic prompts and analyze the output based on Quality,Accuracy and Depth. Also analyse does ChatGPT consistently provide better results with basic prompts? Are there scenarios where naïve prompts work equally well?
+Deliverables:
+A table comparing ChatGPT's responses to naïve and basic prompts across all scenarios.
+Analysis of how prompt clarity impacts the quality, accuracy, and depth of ChatGPT’s outputs.
+Summary of findings with insights on how to structure prompts for optimal results when using ChatGPT.
 
 
-# RESULT
-A comparative analysis highlighting the importance of prompt refinement for improving AI-generated responses.
+## **Prompt Patterns**
+
+### **1. Instructional Pattern**
+
+* **Definition:** Provides clear steps or directions to perform a task.
+* **Example Prompt:**
+  *“Explain step by step how to implement a binary search algorithm in Java.”*
+
+---
+
+### **2. Comparison Pattern**
+
+* **Definition:** Asks the AI to compare two or more concepts, methods, or items.
+* **Example Prompt:**
+  *“Compare supervised learning and unsupervised learning in terms of applications, advantages, and disadvantages.”*
+
+---
+
+### **3. Command Pattern**
+
+* **Definition:** Direct order to perform a task or generate specific content.
+* **Example Prompt:**
+  *“Write a Python program to reverse a string.”*
+
+---
+
+### **4. Q\&A Pattern**
+
+* **Definition:** A straightforward question expecting a factual or explanatory answer.
+* **Example Prompt:**
+  *“What is cloud computing?”*
+
+---
+
+### **5. Opinion or Argument Pattern**
+
+* **Definition:** Asks for personal opinion, critical thinking, or argumentative reasoning.
+* **Example Prompt:**
+  *“Do you think AI will replace human jobs in the future? Provide reasons for your answer.”*
+
+---
+
+### **6. Scenario Pattern**
+
+* **Definition:** Poses a hypothetical or real-world situation and asks AI to respond within that context.
+* **Example Prompt:**
+  *“Imagine you are a data scientist in a hospital. How would you use machine learning to improve patient diagnosis?”*
+
+---
+
+# OUTPUT
+| **Pattern**                       | **Definition**                                                                  | **Example Prompt**                                                                           | **Strengths**                                                                       | **Weaknesses**                                                                             | **Best Use Case**                                         |
+| --------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| **1. Instructional Pattern**      | Provides clear step-by-step directions to perform a task.                       | *“Explain step by step how to implement binary search in Java.”*                             | - Produces structured, detailed answers. <br> - Good for learning processes.        | - May become too lengthy. <br> - Overly dependent on clarity of instruction.               | Tutorials, algorithms, coding help, “how-to” guides.      |
+| **2. Comparison Pattern**         | Asks to compare two or more concepts, items, or methods.                        | *“Compare supervised and unsupervised learning in terms of applications and disadvantages.”* | - Highlights similarities & differences. <br> - Encourages analytical depth.        | - May become biased if prompt isn’t balanced. <br> - Sometimes misses neutral perspective. | Decision-making, study notes, academic analysis.          |
+| **3. Command Pattern**            | Direct instruction to generate a specific output.                               | *“Write a Python program to reverse a string.”*                                              | - Straightforward and efficient. <br> - Produces direct output like code or text.   | - Limited creativity. <br> - Quality depends on specificity of the command.                | Code generation, document drafts, quick tasks.            |
+| **4. Q\&A Pattern**               | Straightforward question → factual/explanatory answer.                          | *“What is cloud computing?”*                                                                 | - Simple and easy to use. <br> - Works well for factual or knowledge-based queries. | - Responses may lack depth. <br> - Not good for complex/creative queries.                  | Quick facts, definitions, direct answers.                 |
+| **5. Opinion / Argument Pattern** | Seeks views, reasoning, or argumentative discussion.                            | *“Do you think AI will replace human jobs? Give reasons.”*                                   | - Encourages critical thinking. <br> - Produces balanced reasoning.                 | - Can be subjective. <br> - May lack strong evidence unless specified.                     | Debates, essays, personal reflections.                    |
+| **6. Scenario Pattern**           | Poses a hypothetical or real-world situation and asks AI to respond in context. | *“Imagine you are a doctor. How would you use AI to improve patient diagnosis?”*             | - Produces creative, applied responses. <br> - Makes answers context-specific.      | - Sometimes too imaginative. <br> - May ignore technical accuracy if not guided.           | Case studies, role-play, applied learning, brainstorming. |
+
+# RESULT: The prompt for the above said problem executed successfully
